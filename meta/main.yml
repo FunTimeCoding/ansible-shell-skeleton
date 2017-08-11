@@ -223,4 +223,4 @@ galaxy_info:
 dependencies:
 - role: shell-check
 - role: gnu-sed
-- role: core-utils
+- role: core-utilities
