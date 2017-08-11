@@ -222,5 +222,5 @@ galaxy_info:
 
 dependencies:
 - role: shell-check
-- role: gnu-sed
+- role: gnu-stream-editor
 - role: core-utilities
