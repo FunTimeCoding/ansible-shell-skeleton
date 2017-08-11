@@ -221,6 +221,6 @@ galaxy_info:
     # alphanumeric characters. Maximum 20 tags per role.
 
 dependencies:
-- role: shellcheck
+- role: shell-check
 - role: gnu-sed
-- role: coreutils
+- role: core-utils
