@@ -225,3 +225,4 @@ dependencies:
 - role: shell-check
 - role: gnu-stream-editor
 - role: core-utilities
+- role: vagrant

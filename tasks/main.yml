@@ -4,3 +4,17 @@
     dest: '{{ ansible_user_dir }}/src/shell-skeleton'
   tags:
   - repository
+
+- file:
+    path: '{{ ansible_user_dir }}/src/shell-skeleton/tmp'
+    state: directory
+
+- template:
+    src: ethernet-device-linux.txt
+    dest: '{{ ansible_user_dir }}/src/shell-skeleton/tmp/ethernet-device.txt'
+  when: ansible_system == 'Linux'
+
+- template:
+    src: ethernet-device-macos.txt
+    dest: '{{ ansible_user_dir }}/src/shell-skeleton/tmp/ethernet-device.txt'
+  when: ansible_system == 'Darwin'
