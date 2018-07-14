@@ -225,4 +225,4 @@ dependencies:
 - role: shell-check
 - role: gnu-stream-editor
 - role: core-utilities
-- role: vagrant
+- { role: vagrant, when: ansible_virtualization_role == '' }
