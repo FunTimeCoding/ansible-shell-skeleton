@@ -2,15 +2,11 @@
 - git:
     repo: git@github.com:FunTimeCoding/shell-skeleton.git
     dest: '{{ ansible_user_dir }}/src/shell-skeleton'
-  tags:
-  - repository
   when: git.protocol == 'ssh'
 
 - git:
     repo: https://github.com/FunTimeCoding/shell-skeleton.git
     dest: '{{ ansible_user_dir }}/src/shell-skeleton'
-  tags:
-  - repository
   when: git.protocol == 'https'
 
 - file:
