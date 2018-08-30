@@ -4,3 +4,5 @@ dependencies:
 - role: gnu-stream-editor
 - role: core-utilities
 - { role: vagrant, when: ansible_virtualization_role == '' }
+- role: dh-make
+- role: devscripts
