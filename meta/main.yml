@@ -7,3 +7,4 @@ dependencies:
 - { role: vagrant, when: ansible_virtualization_role == '' or ansible_virtualization_role == 'host' }
 - role: dh-make
 - role: devscripts
+- role: ruby-ronn
