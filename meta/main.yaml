@@ -1,3 +1,4 @@
+---
 dependencies:
 - role: known-hosts
 - role: shell-check
