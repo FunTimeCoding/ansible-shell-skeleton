@@ -1,6 +1,6 @@
 ---
 dependencies:
-- { role: known-hosts-github, when: git.protocol == 'ssh' }
+- { role: known-hosts-git-hub, when: git.protocol == 'ssh' }
 - role: shell-check
 - role: hunspell
 - role: gnu-stream-editor
