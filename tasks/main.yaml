@@ -17,6 +17,7 @@
     src: ethernet-device.txt
     dest: '{{ ansible_user_dir }}/src/shell-skeleton/tmp/ethernet-device.txt'
 
+# TODO: Find out how to run hostname -f on windows, integrate into Vagrantfile, then remove this.
 - template:
     src: domain.txt
     dest: '{{ ansible_user_dir }}/src/shell-skeleton/tmp/domain.txt'
