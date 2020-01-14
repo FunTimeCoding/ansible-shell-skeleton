@@ -5,7 +5,8 @@ dependencies:
 - role: hunspell
 - role: gnu-stream-editor
 - role: core-utilities
-- { role: vagrant, when: not ansible_virtualization_role or ansible_virtualization_role == 'host' }
+- role: vagrant-tools
+- role: docker-tools
 - role: dh-make
 - role: devscripts
 - role: ronn
