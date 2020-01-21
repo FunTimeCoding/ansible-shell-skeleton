@@ -11,3 +11,4 @@ dependencies:
 - role: dh-make
 - role: devscripts
 - role: ronn
+- role: shellspec
