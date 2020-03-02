@@ -2,13 +2,13 @@
 - git:
     repo: git@github.com:FunTimeCoding/shell-skeleton.git
     dest: '{{ ansible_user_dir }}/src/shell-skeleton'
-    version: '{{ shell_skeleton.branch }}'
+    version: '{{ shell_skeleton.version }}'
   when: git.protocol == 'ssh'
 
 - git:
     repo: https://github.com/FunTimeCoding/shell-skeleton.git
     dest: '{{ ansible_user_dir }}/src/shell-skeleton'
-    version: '{{ shell_skeleton.branch }}'
+    version: '{{ shell_skeleton.version }}'
   when: git.protocol == 'https'
 
 - file:
