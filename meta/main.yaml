@@ -12,3 +12,4 @@ dependencies:
 - role: devscripts
 - role: ronn
 - role: shellspec
+- role: jq
