@@ -7,6 +7,7 @@ dependencies:
 - role: gnu-stream-editor
 - role: core-utilities
 - { role: vagrant, when: not ansible_virtualization_role or ansible_virtualization_role == 'host' }
+- { role: sonar-scanner, when: shell_skeleton.install_development_dependencies }
 - role: docker
 - role: dh-make
 - role: devscripts

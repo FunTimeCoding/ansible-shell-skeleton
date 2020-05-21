@@ -1,3 +1,4 @@
 ---
 shell_skeleton:
   version: master
+  install_development_dependencies: False
