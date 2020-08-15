@@ -15,3 +15,4 @@ dependencies:
 - role: ronn
 - role: shellspec
 - role: jq
+- role: vagrant-configuration
