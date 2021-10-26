@@ -19,9 +19,13 @@
     src: ethernet-device.txt
     dest: '{{ ansible_user_dir }}/src/shell-skeleton/tmp/ethernet-device.txt'
     mode: 0644
+  when: ansible_system != 'Windows'
+  check_mode: ansible_system != 'Windows'
 
 # TODO: Find out how to run hostname -f on windows, integrate into Vagrantfile, then remove this.
 - template:
     src: domain.txt
     dest: '{{ ansible_user_dir }}/src/shell-skeleton/tmp/domain.txt'
     mode: 0644
+  when: ansible_system != 'Windows'
+  check_mode: ansible_system != 'Windows'
