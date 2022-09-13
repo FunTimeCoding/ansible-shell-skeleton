@@ -8,7 +8,7 @@ dependencies:
 - role: core-utilities
 - role: findutils
 - { role: vagrant, when: not ansible_virtualization_role or ansible_virtualization_role == 'host' }
-- { role: sonar-scanner, when: shell_skeleton.install_development_dependencies }
+- { role: sonar-scanner, when: shell_skeleton.development_dependencies }
 - { role: docker, when: nftables.enabled is defined and nftables.enabled }
 - role: dh-make
 - role: devscripts
